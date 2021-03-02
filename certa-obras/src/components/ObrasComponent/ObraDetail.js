@@ -39,13 +39,15 @@ class ObraDetail extends Component{
 
   
 }
-
+atualizacoes = (id) => {
+  window.location.href = '/update/:'+id
+  }
   
   render(){
     const { key, nome, endereco, cliente, dataInicio} = this.state;
     return(
       <Wrapper>
-        <div><a>Visão Geral</a> / <button>Atualizações</button></div>
+        <div>Visão Geral / <button onClick={() => this.atualizacoes(key)}>Atualizações</button></div>
             <Main key={key}>
               <div>id: {key} </div><div>Obra: {nome}</div><div>Endereço: {endereco}</div><div>Cliente: {cliente}</div><div>Data de inicio: {dataInicio}</div>
               </Main>
