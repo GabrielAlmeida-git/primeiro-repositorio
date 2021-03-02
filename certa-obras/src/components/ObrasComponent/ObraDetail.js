@@ -39,9 +39,7 @@ class ObraDetail extends Component{
 
   
 }
-atualizacoes = (id) => {
-  window.location.href = '/update/:'+id
-  }
+
   
   render(){
     const { key, nome, endereco, cliente, dataInicio} = this.state;
