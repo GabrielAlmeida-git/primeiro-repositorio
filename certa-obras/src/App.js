@@ -5,6 +5,7 @@ import Header from './components/HomeComponent/Header';
 import Obras from './components/HomeComponent/Obras';
 import SideMenu from './components/HomeComponent/SideMenu';
 import HeaderObra from './components/ObrasComponent/HeaderObra';
+import ObraDetail from './components/ObrasComponent/ObraDetail';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
                   <SideMenu/>
                   <Main>
                     <HeaderObra/>
-                   
+                   <ObraDetail/>
                   </Main>
               </Container>
             </Route>
