@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import './App.css';
 import Header from './components/HomeComponent/Header';
+import Obras from './components/HomeComponent/Obras';
 import SideMenu from './components/HomeComponent/SideMenu';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
               <Container>
                   <SideMenu/>
                   <Main>
+                  <Obras/>
                     <Header/>
                   </Main>
               </Container>
