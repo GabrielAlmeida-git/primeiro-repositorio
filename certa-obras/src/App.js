@@ -1,19 +1,37 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
 import './App.css';
 import Header from './components/HomeComponent/Header';
 import Obras from './components/HomeComponent/Obras';
 import SideMenu from './components/HomeComponent/SideMenu';
+import HeaderObra from './components/ObrasComponent/HeaderObra';
+import ObrasDetail from './components/ObrasComponent/ObraDetail';
 
 function App() {
   return (
     <div className="App">
-              <Container>
+        <Router>
+          <Switch>
+            <Route path="/home">
+            <Container>
                   <SideMenu/>
                   <Main>
                     <Header/>
                     <Obras/>
                   </Main>
               </Container>
+            </Route>
+            <Route path="/obras/:id">
+              <Container>
+                  <SideMenu/>
+                  <Main>
+                    <HeaderObra/>
+                    <ObrasDetail/>
+                  </Main>
+              </Container>
+            </Route>
+          </Switch>
+        </Router>
     </div>
   );
 }
