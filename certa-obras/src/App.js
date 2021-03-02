@@ -10,8 +10,8 @@ function App() {
               <Container>
                   <SideMenu/>
                   <Main>
-                  <Obras/>
                     <Header/>
+                    <Obras/>
                   </Main>
               </Container>
     </div>

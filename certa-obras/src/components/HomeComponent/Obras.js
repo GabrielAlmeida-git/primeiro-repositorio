@@ -87,7 +87,7 @@ padding-left: 1rem;
 padding-right: 1rem;
 display: grid;
 width: 100%;
-height: 50px;
+height: 70px;
 border-style: outset;
 border-radius: 25px;
 margin-top: 1rem;
@@ -98,6 +98,7 @@ background: white;
 `
 
 const InfoObra = styled.div`
+align-items: center;
 `
 
 const NomeObra = styled.div`
@@ -105,6 +106,7 @@ const NomeObra = styled.div`
 `
 
 const EnderecoObra = styled.div`
+align-items: center;
 `
 
 const EditaObra = styled.div`
